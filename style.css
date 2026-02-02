@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ffd6e8;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffe3f0;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Cormorant', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #c20078;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #c20078;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #c20078;
+}
+
+/* PRODUCTS GRID */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin: 40px auto;
+}
+
+/* CARD */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(194, 0, 120, 0.15);
+}
+
+/* IMAGE BOX */
+.image-box {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.image-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* SWIPE / SLIDE HOVER EFFECT */
+.card:hover img {
+  transform: translateX(-8px) scale(1.05);
+}
+
+/* PRODUCT TEXT */
+.card h3 {
+  margin: 15px 0 5px;
+  color: #c20078;
+}
+
+.price {
+  color: #ff2f92;
+  font-weight: bold;
+}
+
+/* GOOGLE FORM LABEL */
+.google-form-label {
+  text-align: center;
+  margin: 30px auto 60px;
+}
+
+.google-form-label p {
+  font-size: 15px;
+  color: #c20078;
+}
+
+.google-form-label a {
+  color: #ff2f92;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.google-form-label a:hover {
+  text-decoration: underline;
+}
+
+/* ABOUT */
+.about {
+  background: #fff;
+  padding: 50px 30px;
+  border-radius: 25px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.about h2 {
+  color: #c20078;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #ffe3f0;
+  text-align: center;
+  padding: 20px;
+  color: #c20078;
+}
